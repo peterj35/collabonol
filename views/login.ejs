@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Login</title>
+    <% include shared/head %>
+    <link rel="stylesheet" href="global.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+<body>
+    <% include shared/navbar %>
+
+    <div class="container">
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading text-center">Login to Collabonol</h2>
+        <hr>
+        <button class="btn btn-primary btn-block"><i class="fa fa-facebook-square"></i>&nbsp; Login using Facebook</button>
+        <hr>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+
+        <hr>
+
+        <a href="/logintwo" class="btn btn-lg btn-primary btn-block">Login</a>
+      </form>
+
+    </div> <!-- /container -->
+
+    <% include shared/footer %>
+</body>
+</html>
